@@ -1212,7 +1212,7 @@ class ProfileRetrieveUpdateView(RetrieveUpdateAPIView):
 ```
 
 
-## pythonanywhere deployment
+## pythonanywhere deployment 
 
 - Projeyi github a push layın. reponun görünürlüğünü Public olarak ayarlayın. (push larken dbsqlite3'yi de pushluyorum. Db boş olmasın diye.)
 - pythonanywhere sign up oluyoruz.

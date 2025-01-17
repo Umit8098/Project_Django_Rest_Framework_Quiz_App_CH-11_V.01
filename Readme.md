@@ -36,7 +36,7 @@
 
 ---
 
-![screenshot](project_screenshot/ToDo_App.gif)
+![screenshot](project_screenshot/Quiz_App.jpg)
 
 
 ## Built With

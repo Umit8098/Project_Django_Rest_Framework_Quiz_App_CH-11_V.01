@@ -32,11 +32,19 @@
 
 ## Overview
 
-![screenshot](project_screenshot/ToDo_App-2.gif)
+![screenshot](project_screenshot/quiz_app.gif)
 
 ---
 
-![screenshot](project_screenshot/Quiz_App.jpg)
+![screenshot](project_screenshot/quiz_app_quiz.gif)
+
+---
+
+![screenshot](project_screenshot/quiz_app_user.gif)
+
+---
+
+![screenshot](project_screenshot/quiz_app_shema.jpg)
 
 
 ## Built With

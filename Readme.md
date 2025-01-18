@@ -98,7 +98,8 @@ SECRET_KEY =123456789abcdefg...
 
 ## Acknowledgements
 - [Django Rest Framework](https://www.django-rest-framework.org/)
-- [django-nested-admin ](https://django-nested-admin.readthedocs.io/en/latest/)
+- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/)
+- [django-filter](https://django-filter.readthedocs.io/en/stable/)
 
 
 ## Contact

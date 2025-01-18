@@ -94,6 +94,7 @@ SECRET_KEY =123456789abcdefg...
 <hr>
 
 - Quiz Application API service.
+- admin panelde django-nested-admin paketi kullanımı.
 
 ## Acknowledgements
 - [Django Rest Framework](https://www.django-rest-framework.org/)

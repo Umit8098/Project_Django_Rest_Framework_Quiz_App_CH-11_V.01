@@ -98,6 +98,7 @@ SECRET_KEY =123456789abcdefg...
 
 ## About This Project
 - Quiz Application API service.
+- Using the django-nested-admin package in the admin panel.
 
 <hr>
 

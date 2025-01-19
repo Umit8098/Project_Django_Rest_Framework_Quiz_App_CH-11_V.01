@@ -43,7 +43,7 @@
 ![screenshot](project_screenshot/quiz_app_user.gif)
 
 ---
-Quiz App Project Schema
+- Quiz App Project Schema
 ![screenshot](project_screenshot/quiz_app_shema.jpg)
 
 

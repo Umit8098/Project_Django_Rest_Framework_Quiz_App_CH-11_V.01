@@ -35,15 +35,15 @@
 ![screenshot](project_screenshot/quiz_app.gif)
 
 ---
-
+- Quiz App Test On Postman
 ![screenshot](project_screenshot/quiz_app_quiz.gif)
 
 ---
-
+- User/Authentication App Test On Postman
 ![screenshot](project_screenshot/quiz_app_user.gif)
 
 ---
-
+Quiz App Project Schema
 ![screenshot](project_screenshot/quiz_app_shema.jpg)
 
 
@@ -108,6 +108,7 @@ SECRET_KEY =123456789abcdefg...
 ## Acknowledgements
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/)
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/)
 - [django-filter](https://django-filter.readthedocs.io/en/stable/)
 
 

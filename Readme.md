@@ -2,6 +2,7 @@
 
 <h1 align="center">Project_Django_Rest_Framework_Quiz_App</h1>
 
+<p align="center">🎓 Kullanıcıların quiz oluşturmasına, soruları yönetmesine ve öğrenme süreçlerini organize etmesine olanak tanıyan bir API uygulaması 🎓</p>
 
 <!-- <div align="center">
   <h3>
@@ -31,6 +32,7 @@
   - [Quiz App Project Schema](#quiz-app-project-schema)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
+  - [Örnek Kullanım](#örnek-kullanım)
 - [About This Project](#about-this-project)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
@@ -68,14 +70,23 @@ Postman Collection, API'nizin her bir endpoint'ini test etmek için gerekli iste
 API'leri Postman üzerinden test etmek için aşağıdaki adımları izleyebilirsiniz:
 
 1. Postman'i yükleyin (eğer yüklü değilse): [Postman İndir](https://www.postman.com/downloads/).
-2. Bu [Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143) indirin ve içe aktarın.
-3. API'leri Postman üzerinden test etmeye başlayın.
+2. Bu [Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143) bağlantısını tıklayın ve koleksiyonu indirin.
+3. Postman uygulamasında "Import" seçeneğini kullanarak koleksiyonu içe aktarın.
+4. API'leri Postman üzerinden test etmeye başlayın.
+
+**Not:** Postman koleksiyonu, tüm endpoint'ler için hazır örnek istekleri içerir.
 
 **Postman Collection Linki:**  
 [Blog App API Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143)
 
 
 ## Overview
+
+Quiz API uygulaması, kullanıcıların çeşitli kategorilerde quiz oluşturmasına, sorular eklemesine ve bu içerikleri yönetmesine olanak tanır. Uygulamanın özellikleri:
+- Kullanıcı doğrulama ve yetkilendirme.
+- Quiz ve soru yönetimi için CRUD işlemleri.
+- Arama ve filtreleme özellikleri.
+- Django admin panelinde nested yapı ile kolay içerik yönetimi.
 
 ### Kullanıcı Doğrulama Testi
 <!-- ![screenshot](project_screenshot/quiz_app_user.gif) -->
@@ -99,18 +110,15 @@ API'leri Postman üzerinden test etmek için aşağıdaki adımları izleyebilir
 ### Quiz App Project Schema
 <!-- ![screenshot](project_screenshot/quiz_app_shema.jpg) -->
 <img src="project_screenshot/quiz_app_shema.jpg" alt="Quiz App Project Schema" width="400"/>
-
-
+➡ *Uygulamanın veri modeli ilişkilerini ve yapısını temsil eden şema.*
 
 ## Built With
-
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-Bu proje aşağıdaki araçlar ve kütüphanelerle inşa edilmiştir:
-- [Django Rest Framework](https://www.django-rest-framework.org/) - Güçlü bir REST API framework'ü.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı yetkilendirme modülü.
-- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/)
-- [django-filter](https://django-filter.readthedocs.io/en/stable/)
+Bu proje aşağıdaki teknolojiler ve kütüphaneler kullanılarak geliştirilmiştir:
+- [Django Rest Framework](https://www.django-rest-framework.org/): REST API geliştirmek için kullanılan güçlü bir framework.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
+- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/): Django admin panelinde hiyerarşik yapı yönetimi.
+- [django-filter](https://django-filter.readthedocs.io/en/stable/): Gelişmiş filtreleme özellikleri için kullanılan bir kütüphane.
 
 
 ## How To Use
@@ -155,6 +163,17 @@ SECRET_KEY =123456789abcdefg...
     $ python manage.py runserver
 ```
 
+### Örnek Kullanım
+
+1. **Quiz Listeleme:**
+   - URL: `https://umit8102.pythonanywhere.com/quiz/quiz`
+   - Method: `GET`
+
+2. **Quiz Soru Filtreleme:**
+   - URL: `https://umit8102.pythonanywhere.com/quiz/question/?quiz__title=React`
+   - Method: `GET`
+
+
 ## About This Project
 - Quiz Application API service.
 - Using the django-nested-admin package in the admin panel.
@@ -174,7 +193,7 @@ SECRET_KEY =123456789abcdefg...
 ## Contact
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
-- GitHub [@Umit8098](https://github.com/Umit8098)
+- **GitHub**: [@Umit8098](https://github.com/Umit8098)
 
-- Linkedin [@umit-arat](https://linkedin.com/in/umit-arat/)
+- **LinkedIn**: [@umit-arat](https://linkedin.com/in/umit-arat/)
 <!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->

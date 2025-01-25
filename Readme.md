@@ -98,7 +98,7 @@ API'leri Postman üzerinden test etmek için aşağıdaki adımları izleyebilir
 
 ### Quiz App Project Schema
 <!-- ![screenshot](project_screenshot/quiz_app_shema.jpg) -->
-<img src="project_screenshot/quiz_app_shema.gif" alt="Quiz App Project Schema" width="400"/>
+<img src="project_screenshot/quiz_app_shema.jpg" alt="Quiz App Project Schema" width="400"/>
 
 
 

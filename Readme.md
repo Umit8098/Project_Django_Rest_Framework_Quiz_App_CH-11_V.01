@@ -28,6 +28,7 @@
 - [API Testing](#api-testing)
 - [Overview](#overview)
   - [Kullanıcı Doğrulama Testi](#kullanıcı-doğrulama-testi)
+  - [Web browsable API](#web-browsable-api)
   - [Quiz App Test](#quiz-app-test)
   - [Quiz App Project Schema](#quiz-app-project-schema)
 - [Built With](#built-with)
@@ -94,9 +95,10 @@ Quiz API uygulaması, kullanıcıların çeşitli kategorilerde quiz oluşturmas
 ➡ *Kullanıcı doğrulama işlemleri için Postman üzerinde yapılan test sürecini görebilirsiniz.*
 
 ---
-
+### Web browsable API
 <!-- ![screenshot](project_screenshot/quiz_app.gif) -->
-<img src="project_screenshot/quiz_app.gif" alt="" width="400"/>
+<img src="project_screenshot/quiz_app.gif" alt="Web browsable API" width="400"/>
+➡ *Django Rest Framework'ün sağladığı web arayüzünde API'yi test etme süreci.*
 
 ---
 

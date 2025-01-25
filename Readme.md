@@ -3,7 +3,7 @@
 <h1 align="center">Project_Django_Rest_Framework_Quiz_App</h1>
 
 
-<div align="center">
+<!-- <div align="center">
   <h3>
     <a href="http://umit8102.pythonanywhere.com/">
       Demo
@@ -14,13 +14,16 @@
     </a>
  
   </h3>
-</div>
+</div> -->
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [API Endpoints](#api-endpoints)
+  - [User/Authentication Endpoints:](#userauthentication-endpoints)
+  - [Quiz Endpoints:](#quiz-endpoints)
 - [Overview](#overview)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
@@ -29,6 +32,31 @@
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
+
+## API Endpoints
+
+Bu API aşağıdaki endpoint'leri sağlar:
+
+### User/Authentication Endpoints:
+
+| Method | URL                                                          | Açıklama            |
+|--------|--------------------------------------------------------------|---------------------|
+| POST   | `https://umit8102.pythonanywhere.com/users/register/`        | Yeni kullanıcı kaydı|
+| POST   | `https://umit8102.pythonanywhere.com/users/auth/login/`      | Kullanıcı girişi    |
+| POST   | `https://umit8102.pythonanywhere.com/users/auth/logout/`     | Kullanıcı çıkışı    |
+
+
+### Quiz Endpoints:
+
+| Method | URL                                                                   | Açıklama                             |
+|--------|-----------------------------------------------------------------------|--------------------------------------|
+| GET    | `https://umit8102.pythonanywhere.com/quiz/`                           | Tüm Quiz Kategorilerini listele      |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/quiz`                       | Tüm Kategorilerin quizlerini listele |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/question/`                  | Tüm quizlerin sorularını listele     |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/quiz/?search=angu`          | quiz search                          |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/question/?quiz__title=React`| quiz filter                          |
+
+
 
 ## Overview
 

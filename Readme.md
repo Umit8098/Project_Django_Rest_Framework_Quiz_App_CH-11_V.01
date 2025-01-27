@@ -186,10 +186,10 @@ SECRET_KEY =123456789abcdefg...
 - admin panelde django-nested-admin paketi kullanımı.
 
 ## Acknowledgements
-- [Django Rest Framework](https://www.django-rest-framework.org/)
-- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/)
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/)
-- [django-filter](https://django-filter.readthedocs.io/en/stable/)
+- [Django Rest Framework](https://www.django-rest-framework.org/) - REST API oluşturmak için kullanılan framework.
+- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/) - Django admin panelinde hiyerarşik yapı yönetimi için kullanıldı.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama için kullanıldı.
+- [django-filter](https://django-filter.readthedocs.io/en/stable/): Gelişmiş filtreleme özellikleri için kullanıldı.
 
 
 ## Contact

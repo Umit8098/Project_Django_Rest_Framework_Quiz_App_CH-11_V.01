@@ -2,10 +2,9 @@
 
 <h1 align="center">Project_Django_Rest_Framework_Quiz_App</h1>
 
-<p align="center"><strong>🎓 An API application that allows users to create quizzes, manage questions, and organize their learning process
- 🎓</strong></p>
+<p align="center"><strong>🎓 A Quiz API application that allows users to create quizzes, manage questions, and organize their learning process 🎓</strong></p>
 
-<!-- <p align="center">🎓 Kullanıcıların quiz oluşturmasına, soruları yönetmesine ve öğrenme süreçlerini organize etmesine olanak tanıyan bir API uygulaması 🎓</p> -->
+<!-- <p align="center">🎓 Kullanıcıların quiz oluşturmasına, soruları yönetmesine ve öğrenme süreçlerini organize etmesine olanak tanıyan bir Quiz API uygulaması 🎓</p> -->
 
 <!-- <div align="center">
   <h3>
@@ -77,7 +76,7 @@ To test APIs via Postman, you can follow the steps below:
 3. Start testing APIs via Postman.
 
 
-**Postman Collection Linki:**  
+**Postman Collection Link:**  
 [Quiz App API Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143)
 
 

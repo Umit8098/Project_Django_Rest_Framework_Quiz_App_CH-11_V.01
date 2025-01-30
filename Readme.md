@@ -2,7 +2,10 @@
 
 <h1 align="center">Project_Django_Rest_Framework_Quiz_App</h1>
 
-<p align="center">🎓 Kullanıcıların quiz oluşturmasına, soruları yönetmesine ve öğrenme süreçlerini organize etmesine olanak tanıyan bir API uygulaması 🎓</p>
+<p align="center"><strong>🎓 An API application that allows users to create quizzes, manage questions, and organize their learning process
+ 🎓</strong></p>
+
+<!-- <p align="center">🎓 Kullanıcıların quiz oluşturmasına, soruları yönetmesine ve öğrenme süreçlerini organize etmesine olanak tanıyan bir API uygulaması 🎓</p> -->
 
 <!-- <div align="center">
   <h3>
@@ -27,61 +30,66 @@
   - [Quiz Endpoints:](#quiz-endpoints)
 - [API Testing](#api-testing)
 - [Overview](#overview)
-  - [Kullanıcı Doğrulama Testi](#kullanıcı-doğrulama-testi)
-  - [Web browsable API](#web-browsable-api)
+  - [User Authentication Test](#user-authentication-test)
+  - [Web browsable API Test](#web-browsable-api-test)
   - [Quiz App Test](#quiz-app-test)
   - [Quiz App Project Schema](#quiz-app-project-schema)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
-  - [Örnek Kullanım](#örnek-kullanım)
-- [About This Project](#about-this-project)
-- [Acknowledgements](#acknowledgements)
+  - [Example Usage](#example-usage)
+- [Key Features](#key-features)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## API Endpoints
 
-Bu API aşağıdaki endpoint'leri sağlar:
+This API provides the following endpoints:
 
 ### User/Authentication Endpoints:
 
-| Method | URL                                                          | Açıklama            |
-|--------|--------------------------------------------------------------|---------------------|
-| POST   | `https://umit8102.pythonanywhere.com/users/register/`        | Yeni kullanıcı kaydı|
-| POST   | `https://umit8102.pythonanywhere.com/users/auth/login/`      | Kullanıcı girişi    |
-| POST   | `https://umit8102.pythonanywhere.com/users/auth/logout/`     | Kullanıcı çıkışı    |
+| Method | URL                                                          | Explanation           |
+|--------|--------------------------------------------------------------|-----------------------|
+| POST   | `https://umit8102.pythonanywhere.com/users/register/`        | New user registration |
+| POST   | `https://umit8102.pythonanywhere.com/users/auth/login/`      | User login            |
+| POST   | `https://umit8102.pythonanywhere.com/users/auth/logout/`     | User logout           |
 
 
 ### Quiz Endpoints:
 
-| Method | URL                                                                   | Açıklama                             |
+| Method | URL                                                                   | Explanation                          |
 |--------|-----------------------------------------------------------------------|--------------------------------------|
-| GET    | `https://umit8102.pythonanywhere.com/quiz/`                           | Tüm Quiz Kategorilerini listele      |
-| GET    | `https://umit8102.pythonanywhere.com/quiz/quiz`                       | Tüm Kategorilerin quizlerini listele |
-| GET    | `https://umit8102.pythonanywhere.com/quiz/question/`                  | Tüm quizlerin sorularını listele     |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/`                           | List all Quiz Categories             |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/quiz`                       | List quizzes of all Categories       |
+| GET    | `https://umit8102.pythonanywhere.com/quiz/question/`                  | List questions of all quizzes        |
 | GET    | `https://umit8102.pythonanywhere.com/quiz/quiz/?search=angu`          | quiz search                          |
 | GET    | `https://umit8102.pythonanywhere.com/quiz/question/?quiz__title=React`| quiz filter                          |
 
 
 ## API Testing
 
-Postman Collection, API'nizin her bir endpoint'ini test etmek için gerekli istekleri içerir. API'nin işlevselliğini hızlı bir şekilde anlamak için kullanabilirsiniz.
+Postman Collection contains the necessary requests to test each endpoint of your API. You can use it to quickly understand the functionality of the API.
 
-API'leri Postman üzerinden test etmek için aşağıdaki adımları izleyebilirsiniz:
+To test APIs via Postman, you can follow the steps below:
 
-1. Postman'i yükleyin (eğer yüklü değilse): [Postman İndir](https://www.postman.com/downloads/).
-2. Bu [Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143) bağlantısını tıklayın ve koleksiyonu indirin.
-3. Postman uygulamasında "Import" seçeneğini kullanarak koleksiyonu içe aktarın.
-4. API'leri Postman üzerinden test etmeye başlayın.
+1. Install Postman (if not installed): [Postman İndir](https://www.postman.com/downloads/).
+2. This [Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143) download and import.
+3. Start testing APIs via Postman.
 
-**Not:** Postman koleksiyonu, tüm endpoint'ler için hazır örnek istekleri içerir.
 
 **Postman Collection Linki:**  
-[Blog App API Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143)
+[Quiz App API Postman Collection](https://umit-dev.postman.co/workspace/Team-Workspace~7e9925db-bf34-4ab9-802e-6deb333b7a46/collection/17531143-e7678a3c-288b-4c80-b639-b1a1b6b42051?action=share&creator=17531143)
 
 
 ## Overview
+
+The Quiz API application allows users to create quizzes in various categories, add questions and manage these contents. Features of the application:
+- User authentication and authorization.
+- CRUD operations for quiz and question management.
+- Search and filtering features.
+- Easy content management with nested structure in Django admin panel.
+
+---
 
 Quiz API uygulaması, kullanıcıların çeşitli kategorilerde quiz oluşturmasına, sorular eklemesine ve bu içerikleri yönetmesine olanak tanır. Uygulamanın özellikleri:
 - Kullanıcı doğrulama ve yetkilendirme.
@@ -89,38 +97,46 @@ Quiz API uygulaması, kullanıcıların çeşitli kategorilerde quiz oluşturmas
 - Arama ve filtreleme özellikleri.
 - Django admin panelinde nested yapı ile kolay içerik yönetimi.
 
-### Kullanıcı Doğrulama Testi
+### User Authentication Test
 <!-- ![screenshot](project_screenshot/quiz_app_user.gif) -->
 <img src="project_screenshot/quiz_app_user.gif" alt="User/Authentication Test" width="400"/>
-➡ *Kullanıcı doğrulama işlemleri için Postman üzerinde yapılan test sürecini görebilirsiniz.*
+
+➡ Testing user authentication processes with Postman.
 
 ---
-### Web browsable API
+### Web browsable API Test
 <!-- ![screenshot](project_screenshot/quiz_app.gif) -->
 <img src="project_screenshot/quiz_app.gif" alt="Web browsable API" width="400"/>
-➡ *Django Rest Framework'ün sağladığı web arayüzünde API'yi test etme süreci.*
+
+➡ The process of testing the API in the web interface provided by Django Rest Framework.
 
 ---
 
 ### Quiz App Test
 <!-- ![screenshot](project_screenshot/quiz_app_quiz.gif) -->
 <img src="project_screenshot/quiz_app_quiz.gif" alt="Quiz App Test" width="400"/>
-➡ *Blog API'sini Postman ile test etme.*
+
+➡ Testing the Quiz App API with Postman.
 
 ---
 
 ### Quiz App Project Schema
 <!-- ![screenshot](project_screenshot/quiz_app_shema.jpg) -->
 <img src="project_screenshot/quiz_app_shema.jpg" alt="Quiz App Project Schema" width="400"/>
-➡ *Uygulamanın veri modeli ilişkilerini ve yapısını temsil eden şema.*
+
+➡ Schema that represents the application's data model relationships and structure.
+
 
 ## Built With
+
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-Bu proje aşağıdaki teknolojiler ve kütüphaneler kullanılarak geliştirilmiştir:
-- [Django Rest Framework](https://www.django-rest-framework.org/): REST API geliştirmek için kullanılan güçlü bir framework.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
-- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/): Django admin panelinde hiyerarşik yapı yönetimi.
-- [django-filter](https://django-filter.readthedocs.io/en/stable/): Gelişmiş filtreleme özellikleri için kullanılan bir kütüphane.
+This project is built with the following tools and libraries:
+
+- [Django Rest Framework](https://www.django-rest-framework.org/): A powerful framework for developing REST APIs.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): User authentication and authorization.
+- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/): Hierarchical structure management in Django admin panel.
+- [django-filter](https://django-filter.readthedocs.io/en/stable/): To facilitate data filtering operations.
+
 
 
 ## How To Use
@@ -165,31 +181,35 @@ SECRET_KEY =123456789abcdefg...
     $ python manage.py runserver
 ```
 
-### Örnek Kullanım
+### Example Usage
 
-1. **Quiz Listeleme:**
+1. **List Quiz:**
    - URL: `https://umit8102.pythonanywhere.com/quiz/quiz`
    - Method: `GET`
 
-2. **Quiz Soru Filtreleme:**
+2. **Filter Question Quiz:**
    - URL: `https://umit8102.pythonanywhere.com/quiz/question/?quiz__title=React`
    - Method: `GET`
 
 
-## About This Project
-- Quiz Application API service.
-- Using the django-nested-admin package in the admin panel.
 
-<hr>
+## Key Features
 
-- Quiz Application API service.
-- admin panelde django-nested-admin paketi kullanımı.
+- **Quiz Management:** Users can create and update quizzes in various categories.  
+- **Question Management:** Questions can be added, edited and deleted for each quiz.  
+- **User Authorization:** Registered users have quiz and question management privileges.  
+- **Admin Panel:** Hierarchical data management with Django Nested Admin.  
+- **Search and Filtering:** Advanced filtering options on quiz and question data.  
+- **Responsive API:** Secure and high-performance API with Django Rest Framework.
 
-## Acknowledgements
-- [Django Rest Framework](https://www.django-rest-framework.org/) - REST API oluşturmak için kullanılan framework.
-- [django-nested-admin](https://django-nested-admin.readthedocs.io/en/latest/) - Django admin panelinde hiyerarşik yapı yönetimi için kullanıldı.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama için kullanıldı.
-- [django-filter](https://django-filter.readthedocs.io/en/stable/): Gelişmiş filtreleme özellikleri için kullanıldı.
+---
+
+- **Quiz Yönetimi:** Kullanıcılar çeşitli kategorilerde quizler oluşturabilir ve güncelleyebilir.  
+- **Soru Yönetimi:** Her quiz için sorular eklenebilir, düzenlenebilir ve silinebilir.  
+- **Kullanıcı Yetkilendirme:** Kayıtlı kullanıcılar quiz ve soru yönetim yetkilerine sahip olur.  
+- **Admin Panel:** Django Nested Admin ile hiyerarşik veri yönetimi.  
+- **Arama ve Filtreleme:** Quiz ve soru verileri üzerinde gelişmiş filtreleme seçenekleri.  
+- **Duyarlı API:** Django Rest Framework ile güvenli ve performanslı API.  
 
 
 ## Contact
